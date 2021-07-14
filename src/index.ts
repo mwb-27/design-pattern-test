@@ -6,7 +6,7 @@ class People {
   age: number
   private weight: number
   protected father: string
-  constructor(name: string, age: number, weight: number) {
+  constructor(name?: string, age?: number, weight?: number) {
     this.name = name;
     this.age = age;
     this.weight = weight;
@@ -38,3 +38,16 @@ class Student extends People {
 
 const mwb = new Student('mwb', 27, 12);
 mwb.speak();
+
+
+class A extends People {
+  constructor(name: string) {
+    super(name);
+  }
+  speak() {
+    alert('I am A');
+  }
+}
+
+const a = new A('a');
+a.speak();
