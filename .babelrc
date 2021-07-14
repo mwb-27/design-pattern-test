@@ -1,0 +1,4 @@
+{
+  "presets": ["@babel/preset-env"], // babel7后使用@babel/preset-env来支持最新的es预发
+  "plugins": []
+}
